@@ -7,5 +7,7 @@ node ('master') {
     stage "install"
     sh "cd docker"
     sh "ls -a"
+    sh "cd docker"
+    sh "ls -a"
     sh ". startup.sh"
 }
