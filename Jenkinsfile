@@ -1,4 +1,4 @@
-node {
+node ('master') {
   def project = 'hcalab'
   def appName = 'gceme'
   def feSvcName = "${appName}-frontend"
