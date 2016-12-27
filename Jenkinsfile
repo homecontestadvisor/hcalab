@@ -5,5 +5,6 @@ node ('master') {
   def imageTag = "gcr.io/${project}/${appName}:${env.BRANCH_NAME}.${env.BUILD_NUMBER}"
 
     stage "install"
+    sh "pwd"
     sh "./docker/startup.sh"
 }
