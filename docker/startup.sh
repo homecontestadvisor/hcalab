@@ -2,6 +2,7 @@
 
 # check wether the docker dir has been prepared or not
 if [ ! -e environment ]; then
+    ls -a
     cp -n ../examples/docker/* .
     echo "The necessary files of the examples directory have been copied. Customize the file \"environment\" to your needs and execute ${0} again."
     exit
