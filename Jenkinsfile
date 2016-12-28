@@ -6,8 +6,7 @@ node ('master') {
 
     stage "install"
     checkout scm
-    sh "./docker/startup.sh"
-    shopt -s nullglob
-    cd *docker*/
+    sh "./build.sh"
+    sh "./test.sh"
 
 }
