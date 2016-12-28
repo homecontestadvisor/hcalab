@@ -7,6 +7,6 @@ node ('master') {
     stage "install"
     checkout scm
     sh "./docker/startup.sh"
-    sh "cd docker"
-    sh "ls -a"
+    ls | grep docker | xargs cd
+    
 }
