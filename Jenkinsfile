@@ -7,4 +7,6 @@ node ('master') {
     stage "install"
     sh "pwd"
     sh "./docker/startup.sh"
+    sh "cd docker"
+    sh "ls -a"
 }
