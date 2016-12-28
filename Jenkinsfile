@@ -7,6 +7,7 @@ node ('master') {
     stage "install"
     checkout scm
     sh "./docker/startup.sh"
-    ls | grep docker | xargs cd
-    
+    shopt -s nullglob
+    cd *docker*/
+
 }
